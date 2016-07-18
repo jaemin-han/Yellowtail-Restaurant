@@ -1,0 +1,795 @@
+/*
+Project Name: Jeju Yellowtail
+Author: Jaemin Han
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: 'Open Sans', sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+
+/*new navigation map - mobile responsive*/
+.wrapper {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.wrapper h1 {
+  font-size: 4em;
+  line-height: 1;
+}
+
+nav .line {
+  width: 3em;
+  height: .3em;
+  background: yellow;
+  border-radius: 1em;
+  margin-top: .25em;
+}
+
+nav .line:first-of-type {
+  margin-top: .3em;
+}
+
+#page-header {
+  background: #121212;
+  color: white;
+  overflow: hidden;
+  border-bottom: 1px solid yellow;
+  padding: 0 3%;
+}
+
+#page-header a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#page-header h1 {
+  float: left;
+  color: yellow;
+/*  font-family: 'Merriweather', serif;*/
+  font-size: 4em;
+  margin: 10px;
+}
+
+#page-header nav {
+  float: right;
+}
+#page-header nav li {
+  float: left;
+  font-size: 20px;
+}
+
+.line {
+  padding-bottom: 10px;
+}
+
+#page-header nav li:first-child {
+  float: right;
+  display: none;
+  cursor: pointer;
+}
+
+#page-header nav a {
+  display: block;
+  padding: 20px 10px;
+}
+
+#page-header nav li a:hover {
+  color: yellow;
+}
+
+.slides{
+/*  max-width: 100%;
+  max-height: 625px;
+  height: 625px;*/
+  width: 100%;
+  height: 625px;
+  max-width: 1363px;
+  background: no-repeat center top cover;
+  background-size: cover;
+}
+
+
+.slides img{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index:-2;
+}
+
+.slides img.top{
+  height: auto;
+  z-index:-1;
+}
+
+/*old navi*/
+/*#container {
+  width: 100%;
+  margin: auto;
+}
+
+header {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 54px;
+  background-color: #033048;
+}
+
+header nav {
+  float: right;
+  margin-top: 15px;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 0 0 0 20px;
+  font-size: 20px;
+}
+
+header nav ul li a {
+  color: #f9e42e;
+}
+
+.text-container {
+  width: 100%;
+  margin: auto;
+}
+
+.floating-box h1 {
+  float: left;
+  color: #f9e42e;
+  font-size: 38px;
+  padding-left: 50px;
+ } 
+
+.floating-box ul {
+  padding-right: 50px;
+}
+*/
+
+
+
+
+
+
+/**Sticky navigation beginning**/
+
+/*.nav-placeholder { 
+  margin: 0 0 100px 0;
+}
+
+.fixed {
+  position: fixed;
+  left: 62%;  
+  width: 100%;
+  background-color: transparent;
+}
+
+.fixed .nav-inner-most {
+  max-width: 100%;
+  margin: 0;
+  background-color: #033048;
+}*/
+
+/**Sticky navigation end**/
+
+.article-one h2 {
+  text-align: right;
+  color: black;
+  padding-top: 4%;
+}
+
+#section-two {
+  padding: 25px;
+  padding-top: 40px;
+  background: no-repeat center top;
+  background-color: #f0efef;
+  background-size: cover;
+  height: 350px;
+}
+
+#section-two .text-container h3 {
+  width: 50%;
+  float: left;
+  padding-bottom: 20px;
+}
+
+
+
+.article-two p {
+  font-size: 2em;
+}
+
+
+#section-two .article-two, .article-two2 {
+float: left;
+width: 50%;
+}
+
+.article-two {
+  padding: 15px;
+  padding-top: 5px;
+
+}
+
+.article-two2 {
+  padding: 10px;
+}
+
+/*.instagram {
+  padding: 35px;
+}*/
+
+#section-three {
+  padding: 35px;
+  background: no-repeat center top;
+  background-color: #033048;
+  background-size: cover;
+  height: 980px;
+  text-align: center;
+}
+
+#section-three h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #f9e42e;
+}
+
+.3 {
+  width: 33%;
+  height: auto;
+  float: left;
+  background: #000;
+  position: relative;
+  color:#fff;
+}
+
+.3 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+#section-three img:hover {
+  border: solid 5px #f9e42e;
+  margin: 15px;
+}
+
+#section-three img {
+  margin: 20px;
+  width: 300px;
+  height: 350px;
+}
+
+/**menu buildup css**/
+
+.gallery-menu {
+  padding: 0;
+}
+
+.menu-container {
+  width: 100%;
+  height: auto;
+  background-color: #f0efef;
+}
+
+.menu-column h3 {
+  text-align: center;
+}
+
+.menu-column p {
+  text-align: center;
+}
+
+.menu-column {
+  width: 33%;
+  float: left;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.food-menu {
+  margin-top: 20px;
+  display: none;
+  padding-bottom: 20px;
+}
+
+.drink-menu {
+  margin-top: 20px;
+  display: none;
+  padding-bottom: 20px;
+}
+
+.other-menu {
+  margin-top: 20px;
+  display: none;
+  padding-bottom: 20px;
+}
+
+.menu-food {
+  text-align: left;
+  padding: 0 20px 20px 40px;
+}
+
+.menu-food p {
+  line-height: 2em;
+}
+
+.menu-food h2 {
+  margin-bottom: 1em;
+} 
+
+#food-title, #drink-title {
+  font-weight: 200;
+  font-size: 3em;
+  border: 3px solid;
+  padding: 10px;
+  margin: 10px;
+  color: black;
+}
+
+#other-title {
+  font-weight: 200;
+  font-size: 3em;
+  border: 3px solid;
+  padding: 10px;
+  margin: 10px;
+  color: black;
+}
+
+#drink-title:hover {
+  font-size: 3.3em;
+  border: solid;
+}
+
+#food-title:hover {
+  font-size: 3.3em;
+  border: solid;  
+}
+
+#other-title:hover {
+  font-size: 3.3em;
+  border: solid;
+}
+
+.price {
+  font-style: italic;
+  color: black;
+  font-size: 1em;
+}
+
+.picture-break {
+  min-height: 300px;
+  width: 100%;
+  margin-bottom: -5px;
+}
+
+/**New layer based on codepen example**/
+#ocean {
+  position: relative;
+  width: 100% !important;
+  min-height: 300px;    
+  overflow: hidden;
+}
+
+/**I CANNOT FIGURE OUT THE HORIZONTAL FORMATTING**/
+article {
+    position: absolute;
+    top: 240px;
+    left: 40px;
+    width: 300px;
+    z-index: 4;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.parallax-item {
+  position: absolute;
+  z-index: 5;
+  top: 40px;
+  left: 400px;
+}
+
+#ocean>div:nth-of-type(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 400px;
+  background: url(../images/oceancopy.jpg) 50% 0 no-repeat fixed;
+}
+
+
+
+/**two image background (jeju island) movement other options but deleted**/
+/*.parallax {
+  perspective: 43px;
+  height: 50vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective-origin: 60%;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin-x: 100%;
+}
+.parallax__layer--base {
+transform: translateZ(0px);
+}
+
+.parallax__layer--back {
+  transform: translateZ(0px) scale(1);
+}
+
+.title {
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.title2 {
+  position: absolute;
+  left: 41%;
+  padding-top: 329px;
+}
+
+.image-break {
+ height: 110%; 
+ width: 100%;
+}*/
+
+/**end of two layers**/
+
+#section-four {
+  height: 650px;
+  background-color: #f0efef;
+}
+
+#section-four h3{
+  padding: 30px 30px;
+
+}
+
+/*#section-four h1 {
+  color: black;
+  font-size: 20px;
+  margin: 0px 0 10px 10px;
+  padding: 45px;
+}*/
+
+.article-three{
+  padding: 0px;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+a {
+text-decoration: none;
+text-decoration-color: black;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: bold;
+  color: white;
+}
+
+h2 {
+   text-align: center;
+  font-size: 180%;
+  line-height: 120%
+  padding: 5% 0;
+  color: #033048;
+/*  font-size: 3em;
+  font-weight: normal;
+  padding-top: 33px;*/
+}
+
+.get-it-now { 
+  display: block;
+  width: 280px;
+  margin: 25px auto;
+  padding:12px 0;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #f9e42e;
+  border: none;
+  color: #033048;
+}
+
+h3{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  /*color: #f9e42e;*/
+  color: black;
+  padding: 10px;
+}
+
+p {
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+.article-two ul {
+  padding-top: 15px;
+}
+
+.article-two li {
+  font-size: 18px;
+  padding-top: 5px;
+}
+
+#section-three p {
+  width: 450px;
+  margin: 0 auto;
+  padding-top: 130px;
+  color: white;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+span {
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+button:hover{
+  background-color: white;
+}
+
+button:active {
+outline: none;
+border: none;
+}
+
+#Menu {
+  background-color: #033048;
+  padding: 15px 30px 15px 30px;
+  font-size: 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#Menu a {
+  color:white;
+}
+
+footer {
+  background: #121212;
+  width: 100%;
+  overflow: hidden;
+  opacity: 0.95;
+}
+
+footer section {
+  width: 29%;
+  float: left;
+  margin: 2% 2%;
+  text-align: center;
+  padding-top: 20px;
+}
+
+footer p {
+  color: #fff;
+}
+
+footer h2 {
+  color: yellow;
+}
+
+footer p a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul.social li {
+  display: inline;
+}
+
+ul.social li img {
+  height: 50px;
+}
+
+footer.second {
+  border-top: 1px solid #4D4E50;
+  background-color: #333333;
+  max-height: 50px;
+  text-align: center;
+  opacity: 1;
+}
+/*footer {
+  background: #121212;
+  padding: 25px 0 15px;
+  text-align: center;
+}
+footer .logo {
+  color: #f9e42e;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+footer ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0px 75px;
+}
+footer p {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+}*/
+
+/*-----Media Sizing---*/
+
+@media screen and (max-width: 1080px) and (min-width: 980px) {
+  nav {
+    font-size: 4em;
+  }
+}
+
+@media screen and (max-width: 980px) and (min-width: 768px) {
+  #page-header {
+    font-size: 4em;
+  }
+
+  .food-img {
+    width: 50%;
+  }
+
+  .text-container {
+    width: 100%;
+  }
+
+  .article-two {
+    width: 100%;
+  }
+
+  .article-two2 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    font-size: 10px;
+  }
+  
+  nav {
+    width: auto;
+  }
+#page-header nav li {
+  float: none;
+}
+
+#page-header nav li:first-child {
+  display: block;
+  position: absolute;
+  top: .25em;
+  right: .5em;
+}
+
+ul{
+  height: 0;
+  transition: height 1s;
+  overflow: hidden;
+}
+
+.slideDown {
+  height: 20em;
+}
+
+  .3 {
+    padding: 10px;
+  }
+
+  .menu-column {
+    margin: 10px;
+  }
+
+  .menu-food {
+    padding: 10px;
+  }
+
+  .food-img {
+    padding: 10px;
+  }
+
+  .3 {
+    padding: 20px;
+  }
+
+  .section-two {
+    width: 100%;
+  }
+
+  .text-container {
+    width: 100%;
+  }
+
+  .article-two {
+    width: 100%;
+  }
+
+  .article-two2 {
+    width: 100%;
+  }
+
+
+
