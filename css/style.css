@@ -1,13 +1,13 @@
 /* Box Model Hack */
 * {
-     -moz-box-sizing: border-box; /* Firexfox */
-     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
-     box-sizing: border-box; /* IE */
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
 }
 
 a {
-text-decoration: none;
-text-decoration-color: black;
+  text-decoration: none;
+  text-decoration-color: black;
 }
 
 h1 {
@@ -40,12 +40,12 @@ p {
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
@@ -63,10 +63,10 @@ p {
 }
 
 body {
-     color: #000;
-     font-size: 12px;
-     line-height: 1.4;
-     font-family: 'Open Sans', sans-serif;
+  color: #000;
+  font-size: 12px;
+  line-height: 1.4;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .wrapper {
@@ -105,7 +105,7 @@ nav li {
 }
 
 #page-header {
-  background: #121212;
+  background: #41837E;
   color: white;
   overflow: hidden;
   border-bottom: 1px solid yellow;
@@ -115,6 +115,7 @@ nav li {
 #page-header a {
   color: inherit;
   text-decoration: none;
+  margin-top: -10px;
 }
 
 #page-header h1 {
@@ -162,7 +163,6 @@ nav li {
   background: no-repeat center top cover;
   background-size: cover;
 }
-
 
 .slides img{
   position: absolute;
