@@ -105,7 +105,7 @@ nav li {
 }
 
 #page-header {
-  background: #41837E;
+  background: #033048;
   color: white;
   overflow: hidden;
   border-bottom: 1px solid yellow;
@@ -271,16 +271,17 @@ width: 50%;
   overflow: hidden;
 }
 
-#section-three img:hover {
-  margin: 20px;
+#section-three img {
+  margin: 30px;
   width: 300px;
-  height: 350px;
+  height: 400px;
+  padding-bottom: 20px;
 }
 
-#section-three img {
-  margin: 20px;
+#section-three img:hover {
+  margin: 30px;
   width: 300px;
-  height: 350px;
+  height: 400px;
 }
 
 /* Menu buildup css*/
@@ -429,7 +430,8 @@ article h1 {
   background: url(../images/oceancopy.jpg) 50% 0 no-repeat fixed;
 }
 
-#section-four {
+/*Section Four Start*/
+/*#section-four {
   height: 650px;
   background-color: #f0efef;
 }
@@ -454,7 +456,80 @@ article h1 {
   background-color: #f9e42e;
   border: none;
   color: #033048;
+}*/
+/*Section Four End*/
+/*
+Testing google map*/
+.map {
+  height: 650px;
+  background-color: #f0efef;
+  text-align: center;
 }
+
+.map h3 {
+  padding: 2%;
+  margin: 0;
+}
+
+#map {
+  height: 525px;
+  width: 60%;
+  position: absolute;
+  left: 0px;
+  border: 1px solid black;
+}
+
+.map-nav {
+  width: 100%;
+  float: left;
+  position: absolute;
+}
+
+.right {
+  background-color: white;
+  height: 525px;
+  position: absolute;
+  right: 1px;
+  width: 40%;
+  border: 1px solid black;
+/*  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;*/
+}
+
+.right a {
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+  width: 100%;
+  font-size: 20px;
+  border: 1px solid black;
+  padding: 5px 15px;
+  background-color: #f9e42e;
+}
+
+.right a:hover {
+  color: #f9e42e;
+  border: 1px solid black;
+  padding: 5px 15px;
+  background-color: #f9e42e;
+
+}
+
+.right h3 {
+  font-size: 30px;
+  margin-top: 10vh;
+}
+
+.right h4 {
+  font-size: 16px;
+}
+
+.right h5 {
+  font-size: 16px;
+}
+/*Testing End*/
 
 .article-two ul {
   padding-top: 15px;
@@ -533,7 +608,7 @@ footer p {
 }
 
 footer h2 {
-  color: yellow;
+  color: #f9e42e;
 }
 
 footer p a {
